@@ -1,6 +1,6 @@
 ---
 title: "SigBio-Shiny"
-subtitle: "A standalone interactive application for detecting biological significance on a Gene-Set"
+subtitle: "A standalone interactive application for detecting biological significance on a GeneSet"
 author: "[Sangram Kesahri Sahu](https://sksahu.net)"
 institute: "Bangalore, India"
 date: "2020/07/01 (Updated: `r Sys.Date()`)"
@@ -26,18 +26,18 @@ https://sksahu.net/sigbio-shiny-slides
 
 # Outlines
 
-- What is detecting Biological Significance on a Gene-Set means?
+- What is detecting Biological Significance on a GeneSet means?
 - Some of available resources
-- Ideal scenarios for a gene-set based analysis
+- Ideal scenarios for a GeneSet analysis
 - SigBio-Shiny Overview
 - Features
-- Screenshots
 - Usage
+- Screenshots/Demo
 - Modular Design for developers
 
 ---
 
-# Biological Significance on a Gene-Set
+# Biological Significance on a GeneSet
 
 ![](img/geneset-analysis-overview.png)
 ---
@@ -48,7 +48,7 @@ https://sksahu.net/sigbio-shiny-slides
 
 ---
 
-# Ideal scenarios for a gene-set based analysis
+# Ideal scenarios for a GeneSet analysis
 
 .pull-left[
 - An organism database
@@ -73,7 +73,7 @@ https://sksahu.net/sigbio-shiny-slides
 
 # SigBio-Shiny Overview
 
-SigBio-Shiy provides a standalone R-Shiny based GUI application for doing such geneset based analysis. Build on top of already available open-source infrastructure, Such as - 
+SigBio-Shiny provides a standalone R-Shiny based GUI application for doing such GeneSet based analysis. Build on top of already available **open-source infrastructure**, Such as - 
 
 ![](img/SigBio-Shiny-Overview.png)
 ---
@@ -105,20 +105,6 @@ SigBio-Shiy provides a standalone R-Shiny based GUI application for doing such g
 
 ---
 
-# SigBio-Shiny Demo
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-<iframe src="https://www.youtube.com/embed/Ij-pPLaXUAc" style="position: absolute; top: 0; left: 0; width: 100%; height: 90%; border:0;" allowfullscreen></iframe>
-</div>
-
----
-
-# SigBio-Shiny New UI
-
-![](img/screenshots/screenshot-new-1.png)
-
----
-
 # SigBio-Shiny Usage
 
 - Download as **R-package** and launch into browser directly from R console 
@@ -145,19 +131,35 @@ docker run --user shiny --rm -p 80:3838 sudosk/sig-bio-shiny:latest
 
 ---
 
+# SigBio-Shiny Demo
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<iframe src="https://www.youtube.com/embed/Ij-pPLaXUAc" style="position: absolute; top: 0; left: 0; width: 100%; height: 90%; border:0;" allowfullscreen></iframe>
+</div>
+
+---
+
+# SigBio-Shiny New UI
+
+![](img/screenshots/screenshot-new-1.png)
+
+---
+
 # SigBio-Shiny Modular Design
 
 ![](img/SigBio-Shiny-Modular.png)
 
-Build on a modular approach such that adding a new package/functionality is easy for a contributors. 
+Build on a modular approach such that adding a new package/functionality is easy for a developers.
 
 ---
 
+.center[
 # Thank you 
+]
 
 Project Github - https://github.com/sk-sahu/sig-bio-shiny/
 
-Feedback 
+Open to Feedback or Contributions
 
 - [Project's GitHub Issue section](https://github.com/sk-sahu/sig-bio-shiny/issues) 
 
