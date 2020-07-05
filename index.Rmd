@@ -1,29 +1,30 @@
 ---
 title: "SigBio-Shiny"
-subtitle: "A standalone interactive application for detecting biological significance on a Gene-Set."
+subtitle: "A standalone interactive application for detecting biological significance on a Gene-Set"
 author: "[Sangram Kesahri Sahu](https://sksahu.net)"
 institute: "Bangalore, India"
 date: "2020/07/01 (Updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-    css: ["footer-header.css"]
+    css: ["footer-header.css", default, metropolis, metropolis-fonts]
     lib_dir: libs
     nature:
       highlightLines: true
       highlightStyle: github
+      countIncrementalSlides: false
 # pdf
-#knit: pagedown::chrome_print
+knit: pagedown::chrome_print
 ---
 
 layout: true
 
-<div class="my-footer"><span>xaringan power    
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<div class="my-footer"><span>
+https://sksahu.net/sigbio-shiny-slides    
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></div> 
 
 ---
 
-## Outlines
+# Outlines
 
 - What is detecting Biological Significance on a Gene-Set means?
 - Some of available resources
@@ -36,18 +37,18 @@ layout: true
 
 ---
 
-## Biological Significance on a Gene-Set
+# Biological Significance on a Gene-Set
 
 ![](img/geneset-analysis-overview.png)
 ---
 
-## Some of available resources 
+# Some of available resources 
 
 ![](img/geneset-other-resource.png)
 
 ---
 
-## Ideal scenarios for a gene-set based analysis
+# Ideal scenarios for a gene-set based analysis
 
 .pull-left[
 - An organism database
@@ -60,7 +61,7 @@ layout: true
   - **Programmatic access** alongside GUI
   - Result interpretability with **plots**
 
-**While most available resources support some of above criteria but not all.**
+***While most available resources support some of above criteria but not all.***
 
 ]
 
@@ -70,20 +71,20 @@ layout: true
 
 ---
 
-## SigBio-Shiny Overview
+# SigBio-Shiny Overview
 
 SigBio-Shiy provides a standalone R-Shiny based GUI application for doing such geneset based analysis. Build on top of already available open-source infrastructure, Such as - 
 
 ![](img/SigBio-Shiny-Overview.png)
 ---
 
-## SigBio-Shiny Structure
+# SigBio-Shiny Structure
 
 ![](img/SigBio-Shiny-Structure.png)
 
 ---
 
-## SigBio-Shiny Features
+# SigBio-Shiny Features
 
 - Run time **downloading of selected organism database** with keeping a log for reproducibility. (with [AnnotationHub])
 - **Gene ID mapping** from different database. (with [AnnotationDbi])
@@ -97,14 +98,14 @@ SigBio-Shiy provides a standalone R-Shiny based GUI application for doing such g
 [pathview]: https://bioconductor.org/packages/release/bioc/html/pathview.html
 [enrichplot]: https://www.bioconductor.org/packages/release/bioc/html/enrichplot.html
 
-### Work in progress
+## Work in progress
 
 - Directly launch with R objects from certain packages like DESeq2
 - Complete **reproducible R-script** in the end of an analysis.
 
 ---
 
-## SigBio-Shiny Demo
+# SigBio-Shiny Demo
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 <iframe src="https://www.youtube.com/embed/Ij-pPLaXUAc" style="position: absolute; top: 0; left: 0; width: 100%; height: 90%; border:0;" allowfullscreen></iframe>
@@ -112,15 +113,15 @@ SigBio-Shiy provides a standalone R-Shiny based GUI application for doing such g
 
 ---
 
-## SigBio-Shiny New UI
+# SigBio-Shiny New UI
 
 ![](img/screenshots/screenshot-new-1.png)
 
 ---
 
-## SigBio-Shiny Usage
+# SigBio-Shiny Usage
 
-- Download as R-package and launch into browser directly from R console 
+- Download as **R-package** and launch into browser directly from R console 
 
 ```{r, eval=FALSE}
 remotes::install_github("sk-sahu/sig-bio-shiny") # Install the package
@@ -128,13 +129,13 @@ SigBio::runApp() # Load the shiny application in browser
 SigBio::runApp(res) # work in progress
 ```
 
-- Download as a single R-script for Shiny-Server deploy 
+- Download as a **single R-script** for Shiny-Server deploy 
 
 ```{bash, eval=FALSE}
 wget https://raw.githubusercontent.com/sk-sahu/sig-bio-shiny/master/inst/app/app.R -O sig-bio-shiny-app.R
 ```
 
-- Also can be run from a readily available docker container.
+- Also can be run from a readily available **docker container**.
 
 ```{bash, eval=FALSE}
 docker pull sudosk/sig-bio-shiny:latest
@@ -144,7 +145,7 @@ docker run --user shiny --rm -p 80:3838 sudosk/sig-bio-shiny:latest
 
 ---
 
-## SigBio-Shiny Modular Design
+# SigBio-Shiny Modular Design
 
 ![](img/SigBio-Shiny-Modular.png)
 
@@ -152,7 +153,7 @@ Build on a modular approach such that adding a new package/functionality is easy
 
 ---
 
-## Thank you 
+# Thank you 
 
 Project Github - https://github.com/sk-sahu/sig-bio-shiny/
 
@@ -163,4 +164,6 @@ Feedback
 - [Project's Gitter chat room](https://gitter.im/sig-bio-shiny/community)
 
 - Or directly reach me on twitter [@sangram_ksahu](https://twitter.com/sangram_ksahu)
+
+This Side URL: [https://sksahu.net/sigbio-shiny-slide](https://sksahu.net/sigbio-shiny-slides)
 
