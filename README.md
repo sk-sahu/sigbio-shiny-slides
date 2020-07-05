@@ -1,5 +1,5 @@
 # SigBio-Shiny-Slides
 
-Slides repo for project [SigBio-Shiny](https://github.com/sk-sahu/sig-bio-shiny)
+Slides repo for the [SigBio-Shiny](https://github.com/sk-sahu/sig-bio-shiny) Project.
 
-Slides URL: [sk-sahu.github.io/sig-bio-shiny](sk-sahu.github.io/sig-bio-shiny/)
+Slides URL: [https://sksahu.net/sigbio-shiny-slides](https://sksahu.net/sigbio-shiny-slides)
